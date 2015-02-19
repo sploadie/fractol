@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/16 12:27:25 by tgauvrit          #+#    #+#             */
-/*   Updated: 2015/02/16 16:24:05 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2015/02/19 17:00:56 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ void	fractal_img(t_env *env)
 	i = 0;
 	while (i < win->height)
 	{
-		x = (env->camera->x - ((double)(win->width / 2) * env->camera->epsilon));
+		x = (env->camera->x - (
+			(double)(win->width / 2) * env->camera->epsilon));
 		j = 0;
 		while (j < win->width)
 		{

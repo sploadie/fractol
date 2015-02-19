@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/04 16:23:47 by tgauvrit          #+#    #+#             */
-/*   Updated: 2015/02/18 15:55:27 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2015/02/19 16:58:24 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,31 +33,6 @@ t_fdf_win	*first_window(void *mlx, int argnum, char **argv)
 	return (win);
 }
 
-// void		print_debug_map(t_fdf_map *map)
-// {
-// 	size_t		i;
-// 	size_t		j;
-
-// 	i = 0;
-// 	while (i < map->height)
-// 	{
-// 		j = 0;
-// 		while (j < map->width)
-// 		{
-// 			write(1, "(", 1);
-// 			print_sp_left(ft_itoa(map->grid[i][j]->x), 3);
-// 			write(1, ",", 1);
-// 			print_sp_left(ft_itoa(map->grid[i][j]->y), 3);
-// 			write(1, ",", 1);
-// 			print_sp_left(ft_itoa(map->grid[i][j]->z), 3);
-// 			write(1, ") ", 2);
-// 			j++;
-// 		}
-// 		write(1, "\n", 1);
-// 		i++;
-// 	}
-// }
-
 int			main(int argc, char **argv)
 {
 	t_env		env;
@@ -74,8 +49,6 @@ int			main(int argc, char **argv)
 		env.win = first_window(mlx_init(), argc - 1, argv + 1);
 	ft_putendl("Picking fractal...");
 	env.fractal = get_fractal(argv[1]);
-	// ft_putendl("Original Map:");
-	// print_debug_map(env.map);
 	env.camera = gen_default_camera();
 	env.update = 0;
 	new_fdf_img(env.win);
