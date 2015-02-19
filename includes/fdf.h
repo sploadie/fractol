@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/04 16:14:35 by tgauvrit          #+#    #+#             */
-/*   Updated: 2015/02/19 12:44:10 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2015/02/19 16:02:54 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,13 @@
 # include "libft.h"
 # include "colors.h"
 
-# define DEF_TITLE "FDF Main Window"
+# define DEF_TITLE "Fractol Main Window"
 # define DEF_X 800
 # define DEF_Y 800
 # define DEGREE 0.0174532925
 
 # define DEF_EPSILON 0.01
-# define DEF_DEPTH 100
+# define DEF_DEPTH 200
 # define GRADIENT_SHIFT 0x0000FF
 # define EPSILON_SHIFT 0.001
 
